@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Problem Solving</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #eef1f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #222;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 350px;
+        }
+
+        .card h2 {
+            color: #007bff;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background: #2d2d2d;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JS Problem Solving</h1>
+
+    <div class="category">
+        <h2>1. ATM Withdrawal System</h2>
+        <pre>
+function atmWithdrawal(balance, amount, pin, enteredPin) {
+    if (enteredPin !== pin) return "Incorrect PIN";
+    if (amount > balance) return "Insufficient Funds";
+    if (amount % 100 !== 0) return "Enter amount in multiples of 100";
+    return Withdrawal successful. Remaining balance: $${balance - amount};
+}
+        </pre>
+    </div>
+
+    <div class="category">
+        <h2>2. Online Shopping Discount & Free Shipping</h2>
+        <pre>
+function calculateFinalAmount(orderAmount) {
+    let discount = 0;
+    if (orderAmount > 1000) discount = 0.20;
+    else if (orderAmount >= 500) discount = 0.10;
+    
+    let finalAmount = orderAmount - (orderAmount * discount);
+    let shipping = finalAmount > 50 ? 0 : 10;
+    return finalAmount + shipping;
+}
+        </pre>
+    </div>
+
+    <div class="category">
+        <h2>3. Student Grading System with Extra Credit</h2>
+        <pre>
+function calculateGrade(marks, attendance) {
+    if (attendance > 90) marks += 5;
+    if (marks >= 90) return "A";
+    if (marks >= 80) return "B";
+    if (marks >= 70) return "C";
+    if (marks >= 60) return "D";
+    return "F";
+}
+        </pre>
+    </div>
+
+    <div class="category">
+        <h2>4. Smart Traffic Light System</h2>
+        <pre>
+function trafficLightControl(density) {
+    const times = { "Heavy Traffic": 60, "Moderate Traffic": 40, "Light Traffic": 20 };
+    return times[density] || "Invalid traffic density";
+}
+        </pre>
+    </div>
+
+    <div class="category">
+        <h2>5. Movie Ticket Pricing with Time and Age Discount</h2>
+        <pre>
+function calculateTicketPrice(age, showTime) {
+    let price = 12;
+    if (showTime < 17) price *= 0.8;
+    if (age > 60) price *= 0.7;
+    if (age < 12) price *= 0.6;
+    return price;
+}
+        </pre>
+    </div>
+
+    <div class="category">
+        <h2>6. Job Application Filter</h2>
+        <pre>
+function isEligibleForJob(age, experience, qualification) {
+    return age >= 21 && age <= 55 && experience >= 2 && qualification === "Bachelor's Degree";
+}
+        </pre>
+    </div>
+
+    <div class="category">
+        <h2>7. E-commerce Coupon Redemption</h2>
+        <pre>
+function applyCoupon(orderAmount, couponCode) {
+    let discount = 0, freeShipping = false;
+    if (couponCode === "DISCOUNT10" && orderAmount > 500) discount = 0.10;
+    else if (couponCode === "FREESHIP" && orderAmount > 200) freeShipping = true;
+    
+    let finalAmount = orderAmount - (orderAmount * discount);
+    let shipping = freeShipping || finalAmount > 50 ? 0 : 10;
+    return finalAmount + shipping;
+}
+        </pre>
+    </div>
+
+    <div class="category">
+        <h2>8. Fitness Membership Plan</h2>
+        <pre>
+function choosePlan(planType, wantsTrainer, wantsDietPlan) {
+    if (planType === "VIP" || (wantsTrainer && wantsDietPlan)) return "VIP Plan - $80/month";
+    if (planType === "Premium" || wantsTrainer) return "Premium Plan - $50/month";
+    return "Basic Plan - $20/month";
+}
+        </pre>
+    </div>
+
+    <div class="category">
+        <h2>9. Electricity Bill Calculation with Peak Hours</h2>
+        <pre>
+function calculateElectricityBill(units, timeOfDay) {
+    let rate = units > 300 ? 3 : units > 100 ? 4 : 5;
+    if (timeOfDay >= 20 || timeOfDay < 8) rate *= 1.1;
+    return units * rate;
+}
+        </pre>
+    </div>
+
+    <div class="category">
+        <h2>10. Flight Ticket Booking System</h2>
+        <pre>
+function calculateFlightFare(classType, luggageWeight, isStudent, isSenior) {
+    let fare = 300 + (classType === "Business" ? 200 : classType === "First" ? 500 : 0);
+    fare += Math.max(0, Math.floor((luggageWeight - 20) / 10)) * 50;
+    let discount = isStudent ? 0.15 : isSenior ? 0.10 : 0;
+    return fare * (1 - discount);
+}
+        </pre>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>ShopSync</h1>
+        <ul>
+            <li><a href="#Moblies">Mobiles</a></li>
+            <li><a href="#Laptops">Laptops</a></li>
+            <li><a href="#Shoes">shoes</a></li>
+        </ul>
+        <div id="cart-icon">🛒<span id="cart-count">0</span></div>
+    </nav>
+
+    <div id="products">
+        <div id="Mobiles">
+            <h1 style="text-align: center;"> Mobiles </h1>
+            <div class="product" data-id="1" data-name="Phone" data-price="1299">
+                <img src="./images/iphone16.webp" alt="">
+                <h2>iphone 16</h2>
+                <p>$1299</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="1" data-name="Phone" data-price="1199">
+                <img src="./images/iphone 15.webp" alt="">
+                <h2>iphonr 15</h2>
+                <p>$1199</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="1" data-name="Phone" data-price="1099">
+                <img src="./images/iphone 13.webp" alt="">
+                <h2>iphone 13</h2>
+                <p>$1099</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="1" data-name="Phone" data-price="1259">
+                <img src="./images/iphone 15.webp" alt="">
+                <h2>iphone 14</h2>
+                <p>$1259</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div id="Laptops">
+            <h1 style="text-align: center;"> Laptops</h1>
+            <div class="product" data-id="1" data-name="Phone" data-price="699">
+                <img src="./images/dell.webp" alt="">
+                <h2>Dell</h2>
+                <p>$699</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="Laptop" data-price="599">
+                <img src="./images/hp 15.webp" alt="">
+                <h2>Laptop</h2>
+                <p>$599</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="Laptop" data-price="499">
+                <img src="./images/hp 250 g9.webp" alt="">
+                <h2>Hp 250 G9Laptop</h2>
+                <p>$499</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" data-name="Laptop" data-price="399">
+                <img src="./images/hp 250 g9.webp" alt="">
+                <h2>Hp Victus</h2>
+                <p>$399</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        <div id="Shoes">
+            <h1 style="text-align: center;"> Shoes </h1>
+            <div class="product" data-id="3" data-name="shoes" data-price="110">
+                <img src="./images/air jordans 4.jpg" alt="">
+                <h2>Air jordan 4</h2>
+                <p>$110</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-name="shoes" data-price="100">
+                <img src="./images/jordans.jpg" alt="">
+                <h2>Air jordan 4</h2>
+                <p>$100</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-name="shoes" data-price="99">
+                <img src="./images/air jordans 4.jpg" alt="">
+                <h2>Air jordan 3</h2>
+                <p>$99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-id="3" data-name="shoes" data-price="79">
+                <img src="./images/yeezys.jpg" alt="">
+                <h2>Yeezys</h2>
+                <p>$79</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="cart-container">
+        <h2>Shopping Cart</h2>
+        <button id="close-cart">Close ❌</button>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button id="clear-cart">Empty Cart</button>
+    </div>
+
+    <script src="/index.js" defer></script>
+</body>
+
+</html>

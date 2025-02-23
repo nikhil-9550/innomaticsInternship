@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#cart-icon {
+    cursor: pointer;
+    position: relative;
+    margin-right: 80px;
+}
+
+#cart-count {
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    cursor: pointer;
+}
+
+
+.product {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    width: 150px;
+    height: 300px;
+}
+
+
+.product:hover{
+    cursor:pointer;
+}
+.product img {
+    width: 100%;
+}
+
+#Shoes {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#Mobiles {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    padding-top: 100px;
+}
+
+#Laptops {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.add-to-cart {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#cart-container {
+    position: fixed;
+    right: -320px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+}
+
+#cart-container.show {
+    right: 0;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+#clear-cart {
+    background: red;
+    color: white;
+}
+
+#close-cart {
+    background: gray;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: block;
+}
