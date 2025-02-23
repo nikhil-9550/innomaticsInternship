@@ -1,0 +1,181 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 1;
+}
+.logo{
+    color: rgb(224, 171, 171);
+    
+
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    gap: 50px;
+    
+}
+.nav-items{
+    display: inline;
+}
+li {
+    float: left;
+    
+  }
+  
+  a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+    text-decoration: none;
+  }
+  .content{
+    margin-left: 500px;
+    color: rgb(218, 189, 27);
+  }
+  .logo-img{
+      width: 100px;
+  border-radius: 50%;
+
+  }
+  .menu-container{
+    border: 2px solid black;
+    width:200pxpx;
+    margin: 20px;
+    border-radius: 8px; 
+    margin-left: 20px;
+    object-fit: cover;
+  }
+  .menu-img{
+    width: 100%;
+    background-color: bisque;
+    
+    
+  }
+  .menu-items{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 70px;
+    flex-wrap: wrap;
+    background: #f5ebe0;
+
+    
+  }
+  .menu-img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: #8c5a3a;
+  color: white;
+}
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+} 
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+
+
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f5ebe0; 
+  color: #4a342e;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact button {
+  width: 100%;
+  padding: 12px;
+  background: #8c5a3a;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #6a3d28;
+}
+.menu-name{
+  padding: 20px 20px;
+  text-align: center;
+  background:#f5ebe0; 
+  font-size: 2rem;
+
+
+}
+.social-media{
+  display: flex;
+  padding-top: 30px;
+  padding-left: 20px;
+  gap: 40px;
+  
+
+}
+.copyright{
+  text-align: center;
+}
+.brand{
+  text-align: end;
+  top: 0px;
+}
+.footer-icon-wrapper{
+  display: flex;
+}
+.footer-icon-wrapper:hover{
+  cursor: pointer;
+}
+
